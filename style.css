@@ -8,6 +8,12 @@ a {
   text-decoration: none;
   padding: 12px 8px;
 }
+.navbar-head {
+  font-size: 20px;
+}
+.navbar-head i {
+  font-size: 23px;
+}
 .navbar-menu a:hover {
   background-color: orange;
   opacity: 0.5;
@@ -28,4 +34,30 @@ li {
 ul {
   margin-left: 0;
   display: flex;
+}
+@media screen and (max-width: 784px) {
+  nav {
+    flex-direction: column;
+  }
+  .navbar-head {
+    align-self: flex-start;
+  }
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  padding-left: 0;
+  width: 100%;
+}
+.navbar-menu a{
+  width: 100%;
+  text-align: center;
+}
+.navbar-icon {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 }
